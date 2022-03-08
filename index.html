@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bateria</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Bateria</h1>
+
+    <div class="keys">
+        <div data-key="keyq" class="key" onclick="tocar('keyq')">Q</div>
+        <div data-key="keyw" class="key" onclick="tocar('keyw')">W</div>
+        <div data-key="keye" class="key" onclick="tocar('keye')">E</div>
+
+        <div data-key="keya" class="key" onclick="tocar('keya')">A</div>
+        <div data-key="keys" class="key" onclick="tocar('keys')">S</div>
+        <div data-key="keyd" class="key" onclick="tocar('keyd')">D</div>
+
+        <div data-key="keyz" class="key" onclick="tocar('keyz')">Z</div>
+        <div data-key="keyx" class="key" onclick="tocar('keyx')">X</div>
+        <div data-key="keyc" class="key" onclick="tocar('keyc')">C</div>
+    </div>
+    <div class="composer">
+        <input type="text" id="input" placeholder="Faça uma composição..." />
+        <button>Tocar</button>
+    </div>
+    <div class="info">
+        <p>
+            Quaisquer outras teclas inseridas no campo
+            que não estejam no quadro, apenas servirão
+            de intervalo entre um som e outro quando
+            der play.
+        </p>
+    </div>
+
+    <footer>Criado por Fabricio Nascimento através do curso de javascript da plataforma B7Web </footer>
+
+    <audio id="s_keyq" src="./keyq.wav"></audio>
+    <audio id="s_keyw" src="./keyw.wav"></audio>
+    <audio id="s_keye" src="./keye.wav"></audio>
+    <audio id="s_keya" src="./keya.wav"></audio>
+    <audio id="s_keys" src="./keys.wav"></audio>
+    <audio id="s_keyd" src="./keyd.wav"></audio>
+    <audio id="s_keyz" src="./keyz.wav"></audio>
+    <audio id="s_keyx" src="./keyx.wav"></audio>
+    <audio id="s_keyc" src="./keyc.wav"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
